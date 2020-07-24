@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Card from './Card';
 
-const myHeader = styled.header`
+const MyHeader = styled.header`
     z-index: 0;
     width: 100%;
     display: flex;
@@ -16,9 +16,9 @@ const myHeader = styled.header`
 
 const CardContainer = () => {
         return(
-            <myHeader>
-                <Card className="cards-list"></Card>
-            </myHeader>
+            <MyHeader>
+                <Card></Card>
+            </MyHeader>
         )
 }
 
