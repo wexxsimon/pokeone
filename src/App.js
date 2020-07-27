@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-
-import CardContainer from './components/CardList'
-
+import Card from './components/Card'
+import HeaderBox from './components/HeaderBox'
 
 function App() {
   return (
     <div className="App">
-      <CardContainer/>
+      <HeaderBox/>
+      <Card/>
     </div>
   );
 }

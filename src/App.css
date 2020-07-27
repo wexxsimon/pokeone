@@ -29,6 +29,69 @@ body{
     background:#D9042B;
     
 }
+.cards-list {
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: wrap;
+    padding: 0 25px;
+    justify-items: center;
+   
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid#fcfdff;
+    margin: 30px 15px;
+    width: 280px;
+    height: auto;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    padding:20px 10px;
+    transform: scale(1, 1);  
+    box-shadow: inset 0px 0px 31px -1px rgba(0,227,225,1);
+    border: 1px solid #00ffff;
+    
+  }
+  
+  .card .card_image {
+    width: inherit;
+    height: inherit;
+  }
+  
+  .card .card_image img {
+    width: inherit;
+    height: inherit;
+    border-radius: 40px;
+    object-fit: cover;
+  }
+  
+  .card:hover {
+    background: #fff;
+    transition: 0.4s;
+    transform: scale(1.1, 1.1);
+    box-shadow: inset 0px 0px 31px -1px rgb(150, 255, 0);
+    border: 1px solid #96ff00;
+    z-index:10;
+}
 
 
-
+  .title-white {
+    color: white;
+  }
+  
+  .title-black {
+    color: black;
+  }
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
